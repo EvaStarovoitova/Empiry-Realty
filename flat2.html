@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flat2.css">
+    <title>Минималистичная двухкомнатная квартира </title>
+    
+</head>
+ 
+<header class="header">
+    <img src="logo.png">
+    
+        <nav class="nav">
+            <ul class="hidden">
+                <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                <li><a href='file:///Users/eva/Desktop/coursework/contact.html'>Контакты</a></li>
+               
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="in">
+               
+                
+                <div class="burger-menu">
+                    <ul>
+                        <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                        <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                        <li><a href='file:///Users/eva/Desktop/coursework/contact.html'>Контакты</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+   
+    <div class="registration-container">
+        <div class="registration-form hidden" id="registrationForm">
+            <h2>Оставить заявку</h2>
+            <form id="registrationFormSubmit" action="#" method="post">
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Имя:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="agree" name="agreement" required>
+                    <label for="agree">Я согласен(а) с обработкой моих персональных данных</label>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <button id="showFormBtn">Оставить заявку</button>
+    </div>
+    
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    
+    
+    
+      
+        
+     
+    
+</header>
+<body>
+    <header>
+        <h1>Минималистичная двухкомнатная квартира </h1>
+    </header>
+    <div class="description">
+        <p>Эта двухкомнатная квартира идеально подходит для тех, кто ценит простоту и функциональность в дизайне интерьера. Сочетание чистых линий, нейтральных цветов и минимального количества декора создает атмосферу спокойствия и гармонии.</p>
+        <p>Открытая планировка гостиной и кухни создает ощущение пространства и свободы.</p>
+        <p>Кухня оборудована современными техникой и функциональными элементами хранения, сохраняя минималистичный вид.</p>
+        <p>Спальня оформлена в спокойных тонах с минимальным количеством мебели для создания уютной атмосферы.</p>
+        <p>Ванная комната выполнена в минималистичном стиле с простыми формами, душевой кабиной или ванной и высококачественной сантехникой.</p>
+    </div>
+   
+    
+    <main>
+        <div class="apartment-info">
+            
+            <div class="apartment-parameters">
+                <h3>Параметры квартиры:</h3>
+                    <ul>
+                        <li>Количество комнат: 2</li>
+                        <li>Раздельных комнат: 2</li>
+                        <li>Площадь общая: 62.47 м²</li>
+                        <li>Площадь жилая: 42.48 м²</li>
+                        <li>Площадь кухни: 8.69 м²</li>
+                        <li>Год постройки: 2011</li>
+                        <li>Этаж / этажность: 3/12</li>
+                        <li>Тип дома: Кирпичный</li>
+                        <li>Планировка: Классическая</li>
+                        <li>Балкон: нет</li>
+                        <li>Ремонт: Новый</li>
+                        <li>Высота потолков: 3 м</li>
+                        <li>Санузел: Совмещенный</li>
+                        <li>Собственность: Частная</li>
+                        <li>Условия продажи: Чистая продажа</li>
+                        <li>Номер договора: 118/1 от 5.12.2022</li>
+                    </ul>
+            </div>
+                    
+                   
+            <div class="apartment-photo">
+                <div class="gallery">
+                    <button id="prevBtn">❮</button>
+                    <img src="main2.jpg" alt="Изображение 1" id="currentImage">
+                    <button id="nextBtn">❯</button>
+                </div>
+            </div>    
+        </div>             
+    </main>    
+
+    <div class="map-container">
+        <div class="map">
+            <a href="https://maps.app.goo.gl/XsSr48BxtM3uRr3M6">
+                <img src="flat2.png">
+            </a>
+        </div>
+        <div class="phone-form">
+            <div class="circle">
+                <img src="help.jpg" alt="Изображение">
+            </div>
+            <p>Нужна помощь с подбором квартиры? Оставьте ваш номер телефона и мы вам перезвоним</p>
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+            <button type="submit">Перезвоните мне</button>
+            <button type="submit">Забронировать</button>
+        </div>
+        
+    </div>
+    
+     
+<footer>
+    <div class="contact-info">
+        <div>
+            <p><img src="mail.svg" alt="mail"> realest@gmail.com</p>
+            <p><img src="map.svg" alt="map"> <a href="https://www.google.com/maps/place/пр-т+Независимости+12" target="_blank" class="map-link"> Минск, пр-т Независимости 12</a></p>
+        </div>
+        <div>
+            <p><img src="phone.svg" alt="phone"> +375 29 383 90 10</p>
+            <p><img src="phone.svg" alt="phone"> +375 29 121 18 81</p>
+        </div>
+        <div>
+            <p><img src="clock.svg" alt="clock"> пн - пт с 9:00 до 21:00</p>
+            <p><img src="clock.svg" alt="clock"> сб - вс с 10.00 до 16.00</p>
+        </div>
+    </div>
+    <div class="terms-of-service">
+        <p>Использование портала означает согласие с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфиденциальности</a>. Оплата за рекламные услуги осуществляется на основании публичного договора.</p>
+        <p>Наш рейтинг: 4.88  из 5 (<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>) (1506 отзывов)</p>
+    </div>
+    <div>
+        <p>&copy; 2010 – 2024 Empire Realty</p>
+    </div>
+    
+
+<div class="cards">
+<img src="footer-card-visa.webp" alt="visa">
+<img src="footer-card-mastercard.a66898b8.svg" alt="master">
+<img src="footer-card-halva.52cac5d0.svg" alt="halva">
+
+</div>
+        <div class="social-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 256 256"><defs><linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#ffe4a8"/><stop offset="100%" stop-color="#ffe4a8"/></linearGradient></defs><path fill="url(#logosTelegram0)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0"/><path fill="#fff" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072"/></svg>
+    
+            <a href="#"><img src="face.svg" alt="Facebook" width="30px" height="30px"></a>
+            <a href="#"><img src="vk.svg" alt="VK" width="30px" height="30px"></a>
+            <a href="#"><img src="inst.svg" alt="Instagram" width="30px" height="30px"></a>
+        </div>
+</footer>
+
+    <script>
+
+           
+// Функция для обновления стилей в зависимости от размера экрана
+function updateStyles() {
+    // Получаем размер экрана
+    const screenWidth = window.innerWidth;
+
+    // Получаем ссылку на контейнер галереи
+    const gallery = document.querySelector('.gallery');
+
+    // Получаем ссылки на изображения в галерее
+    const galleryImages = gallery.querySelectorAll('img');
+
+    // Получаем ссылку на блок параметров квартиры
+    const apartmentParameters = document.querySelector('.apartment-parameters');
+
+    if (screenWidth <= 1000) {
+        // Обновляем стили галереи
+        gallery.style.width = '90%';
+        gallery.style.marginLeft = 'auto';
+        gallery.style.marginRight = 'auto';
+        gallery.style.order = '-1'; // Перемещаем галерею наверх перед параметрами квартиры
+        galleryImages.forEach(image => {
+            image.style.width = '100%';
+            image.style.height = 'auto';
+        });
+    } else if (screenWidth <= 1500) {
+        // Возвращаем исходные стили для галереи
+        gallery.style.width = '100%';
+        gallery.style.marginLeft = '20px'; // Исходное местоположение галереи
+        gallery.style.marginRight = '';
+        gallery.style.order = ''; // Возвращаем порядок блоков по умолчанию
+        galleryImages.forEach(image => {
+            image.style.width = '100%';
+            image.style.height = 'auto';
+        });
+    }
+}
+
+// Вызываем функцию обновления стилей при загрузке страницы и при изменении размера окна
+window.addEventListener('load', updateStyles);
+window.addEventListener('resize', updateStyles);
+
+
+// Функция для обновления стилей в зависимости от размера экрана
+function updateStyles() {
+    // Получаем размер экрана
+    const screenWidth = window.innerWidth;
+
+    // Получаем ссылку на контейнер карты
+    const mapContainer = document.querySelector('.map');
+
+    // Получаем ссылку на изображение в контейнере карты
+    const mapImage = document.querySelector('.map img');
+
+    // Получаем ссылку на форму
+    const phoneForm = document.querySelector('.phone-form');
+
+    
+
+ 
+
+    if (screenWidth <= 1000) {
+        // Устанавливаем новые стили для контейнера карты и изображения
+        mapContainer.style.marginLeft = '20px';
+        mapImage.style.width = '100%';
+        mapImage.style.height = 'auto';
+        mapImage.style.margin = '0';
+
+        // Устанавливаем новые стили для формы
+        phoneForm.style.width = '90%';
+        phoneForm.style.marginLeft = 'auto';
+        phoneForm.style.marginRight = 'auto';
+
+       
+
+        // Обновляем стили параметров квартиры
+        apartmentParameters.style.width = '90%';
+        apartmentParameters.style.marginLeft = 'auto';
+        apartmentParameters.style.marginRight = 'auto';
+        apartmentPhoto.style.width = '90%';
+        apartmentPhoto.style.height = 'auto';
+
+        // Устанавливаем максимальную высоту для изображения
+        mapImage.style.maxHeight = 'calc(100vh - 100px)'; // Например, можно использовать высоту окна минус некоторый отступ
+    } else if (screenWidth <= 1500) {
+        // Возвращаем исходные стили для контейнера карты и изображения
+        mapContainer.style.marginLeft = '50px';
+        mapImage.style.width = '850px';
+        mapImage.style.height = '480px';
+        mapImage.style.margin = '0 auto';
+
+        // Возвращаем исходные стили для формы
+        phoneForm.style.width = '190px';
+        phoneForm.style.marginLeft = '170px';
+        phoneForm.style.marginRight = '';
+
+       
+
+        // Возвращаем исходные стили для параметров квартиры
+        apartmentParameters.style.width = '500px';
+        apartmentParameters.style.marginLeft = '50px';
+        apartmentParameters.style.marginRight = '';
+        apartmentPhoto.style.width = '500px';
+        apartmentPhoto.style.height = '600px';
+    }
+}
+
+// Вызываем функцию обновления стилей при загрузке страницы и при изменении размера окна
+window.addEventListener('load', updateStyles);
+window.addEventListener('resize', updateStyles);
+
+document.getElementById('showFormBtn').addEventListener('click', function() {
+        var form = document.getElementById('registrationForm');
+        if (form.classList.contains('hidden')) {
+            form.classList.remove('hidden');
+        } else {
+            form.classList.add('hidden');
+        }
+    });
+    
+    document.getElementById('registrationFormSubmit').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+    
+        // Скрываем форму после отправки
+        var form = document.getElementById('registrationForm');
+        form.classList.add('hidden');
+    
+        // Показываем модальное окно с сообщением "Заявка отправлена"
+        var modal = document.getElementById('myModal');
+        var modalMessage = document.getElementById('modalMessage');
+        modalMessage.textContent = 'Заявка отправлена';
+        modal.style.display = 'block';
+    });
+    
+    // Обработчик события для закрытия модального окна при нажатии на крестик
+    document.getElementsByClassName('close')[0].addEventListener('click', function() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    });
+    
+    // Закрыть модальное окно, если пользователь кликнул вне окна
+    window.addEventListener('click', function(event) {
+        var modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+        // Список изображений
+        var images = [
+            "main2.jpg",
+            "kitch2.jpg",
+            "bed2.jpg",
+            "bath2.jpg",
+            
+
+            // Добавьте пути к вашим изображениям
+        ];
+        var currentIndex = 0;
+        var currentImage = document.getElementById('currentImage');
+
+        // Функция для отображения текущего изображения
+        function showImage(index) {
+            if (index < 0) {
+                index = images.length - 1;
+            } else if (index >= images.length) {
+                index = 0;
+            }
+            currentImage.src = images[index];
+            currentIndex = index;
+        }
+
+        // Переключение к предыдущему изображению
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            showImage(currentIndex - 1);
+        });
+
+        // Переключение к следующему изображению
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            showImage(currentIndex + 1);
+        });
+
+        // Отображение первого изображения при загрузке страницы
+        showImage(currentIndex);
+    </script>
+</body>
+</html>
+

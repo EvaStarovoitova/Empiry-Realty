@@ -1,0 +1,24 @@
+<real-estate-agents>
+    <h2>Агенты по недвижимости</h2>
+    <agent>
+        
+        <p>Анна</p>
+        <p>Специализация: Риэлтор</p>
+        <p>Телефон: +375 29 123 45 67</p>
+        <p>Email: ann@mail.ru</p>
+    </agent>
+    <agent>
+        
+        <p>Владимир</p>
+        <p>Специализация: Агент по нежвижимости</p>
+        <p>Телефон: +375 29 987 65 43</p>
+        <p>Email: vlad@gmail.com</p>
+    </agent>
+    <agent>
+        
+        <p>Иван</p>
+        <p>Специализация: Риэлтор</p>
+        <p>Телефон: +375 29 987 65 43</p>
+        <p>Email: ivan@gmail.com</p>
+    </agent>
+</real-estate-agents>

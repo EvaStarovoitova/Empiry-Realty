@@ -1,0 +1,25 @@
+$heightbody: 100%;
+$marginbody: 0;
+$paddingbody: 0;
+
+$body-background-repeat: no-repeat;
+body, html {
+    height: $heightbody;
+    margin: $marginbody;
+    padding: $paddingbody;   
+}
+
+$over-position: absolute;
+$over-top: 50%;
+$over-left: 50%;
+$over-transform: translate(-50%, -50%);
+$over-text-align: center;
+.overlay {
+    position: $over-position;
+    top: $over-top;
+    left: $over-left;
+    transform: $over-transform;
+    text-align: $over-text-align;
+}
+
+

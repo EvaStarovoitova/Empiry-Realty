@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="1.css.map">
+    <link rel="stylesheet" href="2.css">
+    <title>Empire Realty</title>
+</head>
+<body>
+
+
+    
+    <header class="header">
+        <img src="logo.png" alt="logo">
+        
+            <nav class="nav">
+                <ul class="hidden">
+                     <li><a href='file:///Users/eva/Desktop/coursework/1.html#'>Главная</a></li>
+                    <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                    <li><a href='file:///Users/eva/Desktop/coursework/contact.html'>Контакты</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="in">
+                   
+                    
+                    <div class="burger-menu">
+                        <ul>
+                            <li><a href='file:///Users/eva/Desktop/coursework/1.html#'>Главная</a></li>
+                            <li><a href='file:///Users/eva/Desktop/coursework/catalog.html'>Каталог</a></li>
+                            <li><a href='file:///Users/eva/Desktop/coursework/contact.html'>Контакты</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       
+        
+    
+       
+        <div class="registration-container">
+            <div class="registration-form hidden" id="registrationForm">
+                <h2>Оставить заявку</h2>
+                <form id="registrationFormSubmit" action="#" method="post">
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Имя:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="agree" name="agreement" required>
+                        <label for="agree" class="radio-label">Я согласен(а) с обработкой моих персональных данных</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <button id="showFormBtn">Оставить заявку</button>
+        </div>
+ 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('showFormBtn').addEventListener('click', function() {
+            var form = document.getElementById('registrationForm');
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+            } else {
+                form.classList.add('hidden');
+            }
+        });
+    
+        document.getElementById('registrationFormSubmit').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+        
+            var form = document.getElementById('registrationForm');
+            form.classList.add('hidden');   
+            var modal = document.getElementById('myModal');
+            var modalMessage = document.getElementById('modalMessage');
+            modalMessage.textContent = 'Заявка отправлена';
+            modal.style.display = 'block';
+        });
+        
+        document.getElementsByClassName('close')[0].addEventListener('click', function() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+    </script>
+    </header>
+    <div class="background-image">
+    <div class="background-blur"></div>
+    <div class="overlay">
+        <h1>Empire Realty</h1>
+       
+    </div>
+    </div>
+
+<div class="hits">
+    <div class="image-container">
+        <img src="main1.jpg" alt="Image 1" id="image1">
+        
+        <div class="details">
+            <div class="location">
+                <img src="map.svg" alt="Location">
+                <p>Минск,Грибоедова ул. 4</p>
+            </div>
+            <div class="location">
+                <img src="metro-icon.svg" alt="Location">
+                <p>Молодежная</p>
+            </div>
+            <div class="location">
+                <p>Комнат: 3</p>
+            </div>
+            <div class="location">
+                <img src="card-floor.svg" alt="Location">
+                <p>7/15</p>
+            </div>
+            <div class="location">
+                <p>Год постройки: 2023</p>
+            </div>
+            <div class="location">
+                <p>Цена: 330 000 BYN   100 000 USA</p>
+               
+            </div> 
+             <div class="button">
+                <button id="linkBtn">Подробнее </button>
+                <script>
+                    document.getElementById('linkBtn').addEventListener('click', function() {
+                        window.location.href = 'file:///Users/eva/Desktop/coursework/flat1.html'; 
+                    });
+                </script>
+            </div>
+        </div>   
+    </div>
+    <div class="image-container">
+        <img src="main2.jpg" alt="Image 2" id="image2">
+        <div class="details">
+            <div class="location">
+                <img src="map.svg" alt="Location">
+                <p>Минск,ул.Петра Мстиславца 12</p> 
+            </div>
+            <div class="location">
+                <img src="metro-icon.svg" alt="Location">
+                <p>Восток</p>
+            </div>
+            <div class="location">
+                <p>Комнат: 2</p>
+            </div>
+            <div class="location">
+                <img src="card-floor.svg" alt="Location">
+                <p>3/12</p>
+            </div>
+            <div class="location">
+                <p>Год постройки: 2011</p>
+            </div>
+            <div class="location">
+                <p>Цена: 313 479 BYN   95 834 USA</p>
+                
+            </div> 
+             <div class="button">
+                <button  id="linkBtn2">Подробнее</button>
+                <script>
+                    document.getElementById('linkBtn2').addEventListener('click', function() {
+                        window.location.href = 'file:///Users/eva/Desktop/coursework/flat2.html'; 
+                    });
+                </script>
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="main3.jpg" alt="Image 3" id="image3">
+        <div class="details">
+            <div class="location">
+                <img src="map.svg" alt="Location">
+               <p>Минск, ул. Я.Коласа 61/1</p>
+            </div>
+            <div class="location">
+                <img src="metro-icon.svg" alt="Location">
+                <p>Парк Челюскинцев</p>
+            </div>
+            <div class="location">
+                <p>Комнат: 2</p>
+            </div>
+            <div class="location">
+                <img src="card-floor.svg" alt="Location">
+                <p>5/5</p>
+            </div>
+            <div class="location">
+                <p>Год постройки: 1985</p>
+            </div>
+            <div class="location">
+                <p>Цена: 220 000 BYN 69 000 USA </p>
+                
+            </div> 
+             <div class="button">
+                <button  id="linkBtn3">Подробнее</button>
+                <script>
+                    document.getElementById('linkBtn3').addEventListener('click', function() {
+                        window.location.href = 'file:///Users/eva/Desktop/coursework/flat3.html'; 
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="main4.jpg" alt="Image 4" id="image4">
+        <div class="details">
+            <div class="location">
+                <img src="map.svg" alt="Location">
+                <p>Минск, ул. Кирова 11</p>
+            </div>
+            <div class="location">
+                <img src="metro-icon.svg" alt="Location">
+                <p>Площадь Ленина</p>
+            </div>
+            <div class="location">
+                <p>Комнат: 3</p>
+            </div>
+            <div class="location">
+                <img src="card-floor.svg" alt="Location">
+                <p>3/3</p>
+            </div>
+            <div class="location">
+                <p>Год постройки: 1911</p>
+            </div>
+            <div class="location">
+                <p>Цена: 500 000 BYN 153 000 USA </p>
+            </div> 
+             <div class="button">
+                <button  id="linkBtn4">Подробнее</button>
+                <script>
+                    document.getElementById('linkBtn4').addEventListener('click', function() {
+                        window.location.href = 'file:///Users/eva/Desktop/coursework/flat4.html'; 
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<div class="slider-container">
+    <div class="slide">
+        <div class="review">
+            <div class="info">
+                <div class="name">Женя</div>
+                <div class="time">April 12, 2024</div>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            </div>
+            <p>Отличное агентство недвижимости! Обращался для продажи своей квартиры, и остался очень доволен результатом. Риелторы предоставили комплексный подход к продаже, провели качественную оценку объекта, эффективно рекламировали и представляли мое жилье. Результат превзошел ожидания, и я получил отличную цену за свою квартиру. Спасибо за профессионализм и индивидуальный подход!</p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="review">
+            <div class="info">
+                <div class="name">Оксана</div>
+                <div class="time">May 18, 2023</div>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <p>Профессионализм и отличный сервис! Обратилась в агентство для поиска квартиры в новом городе, и осталась приятно удивлена качеством обслуживания. Риелторы внимательно выслушали мои предпочтения, предложили несколько вариантов, и в итоге помогли мне подобрать идеальное жилье. Благодарю за профессионализм и оперативность!</p>
+        </div>
+    </div>
+</div>
+  
+<footer> 
+        <div class="contact-info">
+            <div>
+                <p><img src="mail.svg" alt="mail"> realest@gmail.com</p>
+                <p><img src="map.svg" alt="map"> <a href="https://www.google.com/maps/place/пр-т+Независимости+12" target="_blank" class="map-link"> Минск, пр-т Независимости 12</a></p>
+            </div>
+            <div>
+                <p><img src="phone.svg" alt="phone"> +375 29 383 90 10</p>
+                <p><img src="phone.svg" alt="phone"> +375 29 121 18 81</p>
+            </div>
+            <div>
+                <p><img src="clock.svg" alt="clock"> пн - пт с 9:00 до 21:00</p>
+                <p><img src="clock.svg" alt="clock"> сб - вс с 10.00 до 16.00</p>
+            </div>
+        </div>
+        <div class="terms-of-service">
+            <p>Использование портала означает согласие с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфиденциальности</a>. Оплата за рекламные услуги осуществляется на основании публичного договора.</p>
+            <p>Наш рейтинг: <strong>4.88</strong>  из 5 (<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>) (1506 отзывов)</p>
+        </div>
+        <div class="copy">
+            <p>&copy; 2010 – 2024 Empire Realty</p>
+        </div>
+        
+
+<div class="cards">
+    <img src="footer-card-visa.webp" alt="visa">
+    <img src="footer-card-mastercard.a66898b8.svg" alt="master">
+    <img src="footer-card-halva.52cac5d0.svg" alt="halva">
+    
+</div>
+    <div class="social-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 256 256"><defs><linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#ffe4a8"/><stop offset="100%" stop-color="#ffe4a8"/></linearGradient></defs><path fill="url(#logosTelegram0)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0"/><path fill="#fff" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072"/></svg>
+    
+        <a href="#"><img src="face.svg" alt="Facebook" width="30px" height="30px"></a>
+        <a href="#"><img src="vk.svg" alt="VK" width="30px" height="30px"></a>
+        <a href="#"><img src="inst.svg" alt="Instagram" width="30px" height="30px"></a>
+    </div>
+</footer>
+
+    <script>
+        
+    document.getElementById("image1").addEventListener("mouseover", function() {
+    this.src = "kitch1.jpg"; 
+});
+
+    document.getElementById("image1").addEventListener("mouseout", function() {
+    this.src = "main1.jpg"; 
+});
+
+
+    document.getElementById("image2").addEventListener("mouseover", function() {
+    this.src = "kitch2.jpg"; 
+});
+
+    document.getElementById("image2").addEventListener("mouseout", function() {
+    this.src = "main2.jpg"; 
+});
+
+
+    document.getElementById("image3").addEventListener("mouseover", function() {
+    this.src = "kitch3.jpg"; 
+});
+
+    document.getElementById("image3").addEventListener("mouseout", function() {
+    this.src = "main3.jpg"; 
+});
+
+
+    document.getElementById("image4").addEventListener("mouseover", function() {
+    this.src = "kitch4.jpg"; 
+});
+
+    document.getElementById("image4").addEventListener("mouseout", function() {
+    this.src = "main4.jpg"; 
+});
+
+
+
+</script>
+</body>
+</html>
+
+ 
